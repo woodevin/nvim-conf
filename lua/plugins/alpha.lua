@@ -10,12 +10,7 @@ return {
 		local dashboard = require("alpha.themes.dashboard")
 
 		dashboard.section.header.val = {
-			[[                                                                       ]],
-			[[                                                                       ]],
-			[[                                                                       ]],
-			[[                                                                       ]],
-			[[                                                                       ]],
-			[[                                                                       ]],
+            [[                                                                       ]],
 			[[                                                                       ]],
 			[[                                                                     ]],
 			[[       ████ ██████           █████      ██                     ]],
@@ -48,12 +43,6 @@ return {
 			dashboard.button("u", "󰂖   Update plugins", "<cmd>lua require('lazy').sync()<CR>"),
 			dashboard.button("q", "   Quit NVIM", ":qa<CR>"),
 		}
-
-		--local function footer()
-		--return "Mohammed Babiker Babai"
-		--end
-
-		--dashboard.section.footer.val = footer()
 
 		dashboard.opts.opts.noautocmd = true
 		alpha.setup(dashboard.opts)
